@@ -1,3 +1,11 @@
+# https://github.com/AndriSveinn/TileTraveller
+
+#1.implematation 2 var miklu erfiðari hefði ég byrjað á því, en af því ég er búinn með nr1
+#2.implematation 2 var miklu auðlesanlegri kerfið var um 10 línur 109
+#3. Miklu auðveldara skrifaði bara yfirfall sem vikar á allt en i fyrri þurfti 
+#  ég alltaf að skrifa línur sem hentaði hverjum reit fyrir sig
+
+#                           SAUÐKÓÐUI
 # Staðsetning = [1,1]
 # norður='(N)orth' 
 # suður='(S)outh'
@@ -107,6 +115,8 @@
     
 # else:
 #     print('Victory!')
+
+
 def has_won(Staðsetning):
     if Staðsetning == [3,1]:
         return True
@@ -189,9 +199,9 @@ def is_valid(færsla,Staðsetning):
         if færsla =='n' or færsla=='s' :
             return True
         else:
-            return False
-        
+            return False        
 
+#Forritið er völundarhús, þar sem notandinn er á byrjunarreit og reynir að komast á lokareit
 Staðsetning = [1,1]
 
 while not has_won(Staðsetning):
@@ -202,3 +212,6 @@ while not has_won(Staðsetning):
         færsla=get_input().lower()
     Staðsetning = move(Staðsetning,færsla)
 print('Victory!')
+
+
+
